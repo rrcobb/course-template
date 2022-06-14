@@ -21,7 +21,7 @@ MD_NEW_TO_TEXT = {}
 
 UUID_PATTERN = /\ ([a-f0-9]{32})/
 lesson_words = ["week", "lesson"]
-LEADING_NUMS_PATTERN = /^(#{lesson_words.join('|')})?[\d\-\.]*/i
+LEADING_NUMS_PATTERN = /^(#{lesson_words.join('|')})?[\d\-]*(?=[a-zA-Z]+)/i
 # change filenames
 def slugify(item)
   item
